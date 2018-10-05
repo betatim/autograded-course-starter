@@ -1,6 +1,10 @@
 tokens:
   circleci: 0eb044771d5d41d6e8fea7525ab00fd48c4e39fe
 
+assignment:
+  organisation: blahahaha
+  name: week1
+
 students:
   - betatim
   - lwasser

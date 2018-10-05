@@ -9,10 +9,31 @@ This is the repository that I use to manage assignments for week 1 in
 > Note: This repository assume you are using GitHub classroom.
 
 
-## Using this
+## Using this as an instructor
 
 1. Install `pip install https://github.com/betatim/grading-workflow-experiments/archive/distributing-work.zip`
-1. Clone this repository to your local machine
-1. Create the student and autograder versions of the homework: `nbauthor master/01-lecture.ipynb`
-1. Create the GitHub classroom template: `nbdistribute /tmp/week1-template`
-1. Create a new repository on GitHub and push the contents of `/tmp/week1-template` there
+2. Clone this repository to your local machine
+3. Create the student and autograder versions of the homework: `nbauthor master/01-lecture.ipynb`
+4. Create the GitHub classroom template: `nbdistribute /tmp/week1-template`
+5. Create a new repository on GitHub
+6. Push the contents of `/tmp/week1-template` to the newly created assignment
+7. Create a new assignment on GitHub Classroom using the repository you created
+   in step 5 as source repository
+8. Add the name of the GitHub organisation and the name of the assignment under
+   the `assignment.organisation` and `assignment.name` keys in `config.yml`:
+   ```
+   assignment:
+     - organisation: blahahaha
+     - name: week1
+   ```
+
+
+## Using this as a student
+
+1. You should receive a link from the instructor, once you click that link you
+   will have your own repository for this homework.
+2. There will be setup instructions for you to follow in the `README.md` of the
+   assignment's repository.
+
+
+## Features
