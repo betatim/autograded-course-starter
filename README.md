@@ -26,6 +26,8 @@ This is the repository that I use to manage assignments for week 1 in
      - organisation: blahahaha
      - name: week1
    ```
+9. Pretend to be a student and accept an assignment
+10. run `nbgrade` which should fetch the work of the students and 'grade' it.
 
 
 ## Using this as a student
@@ -36,4 +38,4 @@ This is the repository that I use to manage assignments for week 1 in
    assignment's repository.
 
 
-## Features
+## Trying it out
