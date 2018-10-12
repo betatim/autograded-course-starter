@@ -30,6 +30,3 @@ students:
 # Additional files that will always be added to the student repository
 extra_files:
   README.md: student_README.md
-github:
-  token: 8ccf667a8b24ae296dd6c83ac7623453bea7d1ae
-  id: 227225794
