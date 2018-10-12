@@ -1,12 +1,12 @@
-# Tim's week 1 assignment
+# Tim's awesome course
 
-This is the repository that I use to manage assignments for week 1 in
-"Intro to managing assignments".
+This is the repository that I use to manage assignments for the course
+"Intro to managing courses with git stuffs".
 
 > Note: This repository is public but the tools assume that normally you'd keep
 > this private.
 
-> Note: This repository assume you are using GitHub classroom.
+> Note: This repository assumes you are using GitHub classroom.
 
 
 ## Using this as an instructor
@@ -32,13 +32,3 @@ This is the repository that I use to manage assignments for week 1 in
    the student's repositories.
 5. Check the student repository, there should be a PR with the new material
    asking the student to merge it.
-
-## Using this as a student
-
-1. You should receive a link from the instructor, once you click that link you
-   will have your own repository for this homework.
-2. There will be setup instructions for you to follow in the `README.md` of the
-   assignment's repository.
-
-
-## Trying it out
