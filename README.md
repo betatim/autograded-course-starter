@@ -13,22 +13,25 @@ This is the repository that I use to manage assignments for week 1 in
 
 1. Install `pip install https://github.com/betatim/grading-workflow-experiments/archive/distributing-work.zip`
 2. Clone this repository to your local machine
-3. Create the student and autograder versions of the homework: `nbauthor master/01-lecture.ipynb`
-4. Create the GitHub classroom template: `nbdistribute /tmp/week1-template`
-5. Create a new repository on GitHub
-6. Push the contents of `/tmp/week1-template` to the newly created assignment
-7. Create a new assignment on GitHub Classroom using the repository you created
-   in step 5 as source repository
-8. Add the name of the GitHub organisation and the name of the assignment under
-   the `assignment.organisation` and `assignment.name` keys in `config.yml`:
-   ```
-   assignment:
-     - organisation: blahahaha
-     - name: week1
-   ```
-9. Pretend to be a student and accept an assignment
-10. run `nbgrade` which should fetch the work of the students and 'grade' it.
-
+3. Inspect `config.yml` and adjust it
+4. Make sure you are in the top directory of this repository
+5. run `nbinit` to get a GitHub access token
+5. Create the template student repository with: `nbauthor --date 2018-01-01`
+   By using a date before the first assignment we get an essentially emtpy
+   template repository.
+6. Create the GitHub classroom template: `nbdistribute --template`
+5. Create your GitHub classroom assignment and use the template repo as the
+   template repo (What GH classroom calls an assignment is a course for us)
+5. Pretend to be a student and accept the "assignment".
+5. Make sure your GitHub username is listed in `config.yml` as a student
+5. Run `nbgrade`. This will collect each student's repository and 'grade' it
+   (currently grading is just a dummy step)
+5. Run `nbauthor --date 2018-10-11` to release the next assignment.
+5. Inspect the student sub-directory, it should contain a new assignment
+5. run `nbdistribute` to create Pull Requests with the new material to each of
+   the student's repositories.
+5. Check the student repository, there should be a PR with the new material
+   asking the student to merge it.
 
 ## Using this as a student
 

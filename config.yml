@@ -1,9 +1,16 @@
 tokens:
   circleci: 0eb044771d5d41d6e8fea7525ab00fd48c4e39fe
 
+# change to a new organisation for experimenting with
+# the organisation has to already exist on GitHub and you need to have access
+# to it
 organisation: blahahaha
-courseName: week1
+# Name of your course. Will be used to prefix repositories
+courseName: awesome-course
 
+# Each assignment here corresponds to one sub-directory in `master/`
+# currently the course has two assignments. Assignments will be added
+# to the student repository when the date is after the release date
 assignments:
   week1:
     release: 2018-10-09
@@ -12,9 +19,17 @@ assignments:
     release: 2018-11-11
     deadline: 2018-11-13
 
+# For each student listed here we will try and fetch their repository
+# and update it when new work is released or during grading runs
+# We assume the student repositories are named following:
+# <organisation>/<courseName>-<studentName> as pattern
 students:
-  - betatim
-  #- lwasser
+- betatim
+- lwasser
 
+# Additional files that will always be added to the student repository
 extra_files:
   README.md: student_README.md
+github:
+  token: 8ccf667a8b24ae296dd6c83ac7623453bea7d1ae
+  id: 227225794
