@@ -1,13 +1,20 @@
 tokens:
   circleci: 0eb044771d5d41d6e8fea7525ab00fd48c4e39fe
 
-assignment:
-  organisation: blahahaha
-  name: week1
+organisation: blahahaha
+courseName: week1
+
+assignments:
+  week1:
+    release: 2018-10-09
+    deadline: 2018-10-11
+  week2:
+    release: 2018-11-11
+    deadline: 2018-11-13
 
 students:
   - betatim
-  - lwasser
+  #- lwasser
 
 extra_files:
   README.md: student_README.md
