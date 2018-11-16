@@ -1,16 +1,22 @@
+# If the student repository are private you will need to get a token
+# from CircleCi and replace the one shown here. To get a token go to
+# https://circleci.com/account/api and click "Create new token"
 tokens:
   circleci: 0eb044771d5d41d6e8fea7525ab00fd48c4e39fe
 
-# change to a new organisation for experimenting with
-# the organisation has to already exist on GitHub and you need to have access
-# to it
+# The GitHub organisation to host your GitHub classroom
+# Create a new organisation on GitHub and change this to the name you gave it
 organisation: blahahaha
-# Name of your course. Will be used to prefix repositories
+# Name of your course. Will be used to prefix repositories inside the
+# organisation. The repositories will be named:
+# https://github.com/<organisation>/<courseName>-template
+# https://github.com/<organisation>/<courseName>-<studentName>
 courseName: awesome-course
 
-# Each assignment here corresponds to one sub-directory in `master/`
-# currently the course has two assignments. Assignments will be added
-# to the student repository when the date is after the release date
+# Each assignment here corresponds to one sub-directory in `master/`.
+# Currently the course has two assignments. Assignments will be added
+# to the student repositories when the date is after the release date.
+# The deadline is used for grading purposes.
 assignments:
   week1:
     release: 2018-10-09
@@ -21,12 +27,14 @@ assignments:
 
 # For each student listed here we will try and fetch their repository
 # and update it when new work is released or during grading runs
-# We assume the student repositories are named following:
-# <organisation>/<courseName>-<studentName> as pattern
+# We assume the student repositories are named according to the following
+# pattern: <organisation>/<courseName>-<studentName>
 students:
 - betatim
 - lwasser
 
 # Additional files that will always be added to the student repository
+# In this example the file called `student_README.md` will be copied to the
+# student's repository as `README.md`
 extra_files:
   README.md: student_README.md
