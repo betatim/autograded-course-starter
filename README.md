@@ -37,7 +37,7 @@ a student's repository when they click 'accept assignment'
 
 
 ### Setup steps
-1. Install `pip install https://github.com/earthlab/grading-workflow-experiments/archive/master.zip`
+1. Install `pip install --upgrade git+https://github.com/earthlab/grading-workflow-experiments.git`
 2. Clone this repository to your local machine.
 3. Make sure you are in the top directory of this repository.
 4. Inspect `config.yml` and adjust it. Make sure to add your GH username
@@ -47,11 +47,11 @@ a student's repository when they click 'accept assignment'
    password every time.
 6. [Create a new GH organisation](https://github.com/organizations/new)
    matching the name you used for `organisation` in `config.yml`.
-7. [Install the notebook bot](https://github.com/settings/apps/notebookbot/installations)
+7. Go to https://classroom.github.com/classrooms/new and create a new classroom
+      for the organisation you just created.
+8. Once you have setup a classroom, you are ready to [install the notebook bot](https://github.com/settings/apps/notebookbot/installations)
    for the organisation you just created. Make sure to enable it for
    "all repositories" in the organisation.
-8. Go to https://classroom.github.com/classrooms/new and create a new classroom
-   for the organisation you just created.
 
 
 ### One time preparation to launch a course
